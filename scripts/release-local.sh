@@ -16,8 +16,9 @@ SCHEME="MoniMoni"
 APP_NAME="MoniMoni"
 DIST_DIR="$ROOT_DIR/dist"
 EXPORT_OPTIONS_SOURCE="$ROOT_DIR/Config/ExportOptions-DeveloperID.plist"
-# Shared team notary profile (same credentials work for any app on this team).
-NOTARY_KEYCHAIN_PROFILE="${NOTARY_KEYCHAIN_PROFILE:-CapMarkNotary}"
+# Team-wide notary profile (not app-specific). Create once with:
+#   xcrun notarytool store-credentials ACNotary
+NOTARY_KEYCHAIN_PROFILE="${NOTARY_KEYCHAIN_PROFILE:-ACNotary}"
 
 VERSION=""
 PUBLISH=0
@@ -35,7 +36,7 @@ Options:
   -h, --help Show this help.
 
 Environment:
-  NOTARY_KEYCHAIN_PROFILE  notarytool profile (default: CapMarkNotary)
+  NOTARY_KEYCHAIN_PROFILE  notarytool profile (default: ACNotary)
   BUILD_NUMBER             CFBundleVersion override
                            (default: UTC timestamp YYYYMMDDHHMM)
 
