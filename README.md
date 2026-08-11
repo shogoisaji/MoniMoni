@@ -82,11 +82,12 @@ notarize → ZIP (optional DMG) → optional GitHub Release upload.
 
 - Apple Developer Program membership
 - `Developer ID Application` certificate in the login keychain
-- notarytool keychain profile (default name: `MoniMoniNotary`)
+- notarytool keychain profile (default: `CapMarkNotary` — same team profile as CapMark; override with `NOTARY_KEYCHAIN_PROFILE`)
 
 ```bash
 # One-time: store App Store Connect API credentials for notarization
-xcrun notarytool store-credentials MoniMoniNotary \
+# (reuse this profile for every app on the same Developer Team)
+xcrun notarytool store-credentials CapMarkNotary \
   --apple-id "you@example.com" \
   --team-id "YOUR_TEAM_ID" \
   --password "app-specific-password"

@@ -3,7 +3,7 @@
 # Package a Developer ID-signed MoniMoni.app into a notarized, stapled DMG.
 #
 # Usage:
-#   AC_API_KEY_PROFILE=MoniMoniNotary scripts/package-dmg.sh path/to/MoniMoni.app
+#   AC_API_KEY_PROFILE=CapMarkNotary scripts/package-dmg.sh path/to/MoniMoni.app
 
 set -euo pipefail
 

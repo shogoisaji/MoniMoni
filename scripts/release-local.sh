@@ -16,7 +16,8 @@ SCHEME="MoniMoni"
 APP_NAME="MoniMoni"
 DIST_DIR="$ROOT_DIR/dist"
 EXPORT_OPTIONS_SOURCE="$ROOT_DIR/Config/ExportOptions-DeveloperID.plist"
-NOTARY_KEYCHAIN_PROFILE="${NOTARY_KEYCHAIN_PROFILE:-MoniMoniNotary}"
+# Shared team notary profile (same credentials work for any app on this team).
+NOTARY_KEYCHAIN_PROFILE="${NOTARY_KEYCHAIN_PROFILE:-CapMarkNotary}"
 
 VERSION=""
 PUBLISH=0
@@ -34,7 +35,7 @@ Options:
   -h, --help Show this help.
 
 Environment:
-  NOTARY_KEYCHAIN_PROFILE  notarytool profile (default: MoniMoniNotary)
+  NOTARY_KEYCHAIN_PROFILE  notarytool profile (default: CapMarkNotary)
   BUILD_NUMBER             CFBundleVersion override
                            (default: UTC timestamp YYYYMMDDHHMM)
 
