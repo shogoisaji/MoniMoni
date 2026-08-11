@@ -15,11 +15,13 @@
 		56B89DB0BEE13AAB85C74583 /* MemoryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C7A4B878579E0527196943 /* MemoryReader.swift */; };
 		681ABE13C8A35E5FB4ABEBE8 /* GPUUsageReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD122C52DB7933DCED6818 /* GPUUsageReaderTests.swift */; };
 		7DAF22CDB8A714A73E282984 /* GPUUsageReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5940557E52E359C675BCBEB /* GPUUsageReader.swift */; };
+		854D75C0E433EB25243CDDD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0136D75EC7389EA7250BF404 /* Assets.xcassets */; };
 		882983F2CB3BF00A8DF581B4 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9015F0F1A4CE86BD3E85E2A9 /* MenuBarView.swift */; };
 		8A6EA9A5C00253F2ACE4E6BD /* MetricType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE73BFB00DFA13CAC5EB96ED /* MetricType.swift */; };
 		9D0C8930FED12F2D83925395 /* MetricTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316E2E31C4289D34F3B6C811 /* MetricTypeTests.swift */; };
 		A246205782B9CE913F27A601 /* SystemMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D3B758C6DDD941D9E8A92 /* SystemMonitorTests.swift */; };
 		C4B650E3E8038985D92490D5 /* MemoryReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8ED0485189E942B98EE92F /* MemoryReaderTests.swift */; };
+		C9DD7A6514745666F133E5F4 /* MoniMoniIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = D0D4786DD4416185BFF47B06 /* MoniMoniIcon.icon */; };
 		D53DF0F5DB21387A08C8FB63 /* SystemMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DF9F24365F623E824C07B /* SystemMetrics.swift */; };
 		E4593E85B54F4B7C7869EC5E /* CPUUsageReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930475F6FFA0F1B2A1D36EA4 /* CPUUsageReaderTests.swift */; };
 		EA75C62D20D99F2E7FA41659 /* SystemMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6CD859D00D66999C522F4E /* SystemMonitor.swift */; };
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0136D75EC7389EA7250BF404 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05564768E5693BBC32BFF624 /* SMCReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMCReader.swift; sourceTree = "<group>"; };
 		1E8ED0485189E942B98EE92F /* MemoryReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryReaderTests.swift; sourceTree = "<group>"; };
 		2E6CD859D00D66999C522F4E /* SystemMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMonitor.swift; sourceTree = "<group>"; };
@@ -52,6 +55,7 @@
 		BE73BFB00DFA13CAC5EB96ED /* MetricType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricType.swift; sourceTree = "<group>"; };
 		C5EBD57973BD4A04D7C48C48 /* MoniMoni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoniMoni.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4DF9F24365F623E824C07B /* SystemMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMetrics.swift; sourceTree = "<group>"; };
+		D0D4786DD4416185BFF47B06 /* MoniMoniIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = MoniMoniIcon.icon; sourceTree = "<group>"; };
 		D97234947EEE6ACB948C5062 /* MoniMoniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoniMoniApp.swift; sourceTree = "<group>"; };
 		ED9A85C3EC5E175CC40DAFA2 /* SystemMetricsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMetricsTests.swift; sourceTree = "<group>"; };
 		FABD122C52DB7933DCED6818 /* GPUUsageReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPUUsageReaderTests.swift; sourceTree = "<group>"; };
@@ -99,7 +103,9 @@
 				09F39FA5D5A22B21C13935EB /* Models */,
 				C7A97F390F62CB9A3E179721 /* Services */,
 				0B01EE6C0D7D07878D0F94E3 /* Views */,
+				0136D75EC7389EA7250BF404 /* Assets.xcassets */,
 				D97234947EEE6ACB948C5062 /* MoniMoniApp.swift */,
+				D0D4786DD4416185BFF47B06 /* MoniMoniIcon.icon */,
 			);
 			path = MoniMoni;
 			sourceTree = "<group>";
@@ -165,6 +171,7 @@
 			buildConfigurationList = 601B95C05C9D7375B4513B42 /* Build configuration list for PBXNativeTarget "MoniMoni" */;
 			buildPhases = (
 				4216685E3A1E28537495B4F6 /* Sources */,
+				58C11048DCEDCB62B40EFEE8 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -214,6 +221,18 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58C11048DCEDCB62B40EFEE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854D75C0E433EB25243CDDD6 /* Assets.xcassets in Resources */,
+				C9DD7A6514745666F133E5F4 /* MoniMoniIcon.icon in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4216685E3A1E28537495B4F6 /* Sources */ = {
