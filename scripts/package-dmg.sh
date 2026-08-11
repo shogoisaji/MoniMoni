@@ -98,10 +98,19 @@ if [[ $create_rc -ne 0 ]]; then
     echo "  create-dmg reported warnings; continuing with the produced DMG."
 fi
 
+# Gatekeeper's spctl assess on a DMG requires a primary signature on the
+# disk image itself. Notarization alone (of unsigned DMG contents) is not enough.
+echo "▸ Signing DMG..."
+security find-identity -v -p codesigning 2>/dev/null \
+    | grep -Fq 'Developer ID Application:' \
+    || die "Developer ID Application certificate is unavailable in the keychain."
+codesign --force --sign "Developer ID Application" --timestamp "$DMG"
+codesign --verify --verbose=2 "$DMG"
+
 echo "▸ Notarizing DMG..."
 xcrun notarytool submit "$DMG" "${NOTARY_ARGS[@]}" --wait
 xcrun stapler staple "$DMG"
 xcrun stapler validate "$DMG"
-spctl --assess -t open --context context:primary-signature "$DMG"
+spctl --assess -t open --context context:primary-signature -v "$DMG"
 
 echo "✓ Done: $DMG"
