@@ -19,18 +19,15 @@ targets:
     type: application
     platform: macOS
     deploymentTarget: "14.0"
+    # Include the app folder as sources so XcodeGen can classify
+    # Assets.xcassets and MoniMoniIcon.icon (Icon Composer) into Resources.
+    # Explicit `resources:` entries are dropped by XcodeGen 2.45.x for these types.
     sources:
       - path: MoniMoni
         excludes:
           - "**/*.h"
           - Info.plist
           - MoniMoni.entitlements
-          - Assets.xcassets
-          - MoniMoniIcon.icon
-          - "MoniMoniIcon.icon/**"
-    resources:
-      - path: MoniMoni/Assets.xcassets
-      - path: MoniMoni/MoniMoniIcon.icon
     configFiles:
       Debug: Config/Shared.xcconfig
       Release: Config/Shared.xcconfig
