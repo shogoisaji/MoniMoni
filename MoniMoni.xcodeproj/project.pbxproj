@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		116AD6F5BD97037477740E6C /* MoniMoniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97234947EEE6ACB948C5062 /* MoniMoniApp.swift */; };
+		19D1FA1A32ACAB98A7302727 /* SMCReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D6595075409BC01CA72AC /* SMCReaderTests.swift */; };
+		2995FBDD7C6930BE468996A4 /* SystemMetricsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9A85C3EC5E175CC40DAFA2 /* SystemMetricsTests.swift */; };
+		3F16BD34C0C02F2ECF611858 /* SMCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05564768E5693BBC32BFF624 /* SMCReader.swift */; };
+		43156C5F12A1EF7BE8BA7BE2 /* CPUUsageReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63476FD92F0008BF8655DF77 /* CPUUsageReader.swift */; };
+		56B89DB0BEE13AAB85C74583 /* MemoryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C7A4B878579E0527196943 /* MemoryReader.swift */; };
+		681ABE13C8A35E5FB4ABEBE8 /* GPUUsageReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD122C52DB7933DCED6818 /* GPUUsageReaderTests.swift */; };
+		7DAF22CDB8A714A73E282984 /* GPUUsageReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5940557E52E359C675BCBEB /* GPUUsageReader.swift */; };
+		882983F2CB3BF00A8DF581B4 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9015F0F1A4CE86BD3E85E2A9 /* MenuBarView.swift */; };
+		8A6EA9A5C00253F2ACE4E6BD /* MetricType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE73BFB00DFA13CAC5EB96ED /* MetricType.swift */; };
+		9D0C8930FED12F2D83925395 /* MetricTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316E2E31C4289D34F3B6C811 /* MetricTypeTests.swift */; };
+		A246205782B9CE913F27A601 /* SystemMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D3B758C6DDD941D9E8A92 /* SystemMonitorTests.swift */; };
+		C4B650E3E8038985D92490D5 /* MemoryReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8ED0485189E942B98EE92F /* MemoryReaderTests.swift */; };
+		D53DF0F5DB21387A08C8FB63 /* SystemMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DF9F24365F623E824C07B /* SystemMetrics.swift */; };
+		E4593E85B54F4B7C7869EC5E /* CPUUsageReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930475F6FFA0F1B2A1D36EA4 /* CPUUsageReaderTests.swift */; };
+		EA75C62D20D99F2E7FA41659 /* SystemMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6CD859D00D66999C522F4E /* SystemMonitor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDBCC31212EE87FEC5C43645 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00BCAD671B382DC58A0747CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE3E29D67D7799070F8C0E7A;
+			remoteInfo = MoniMoni;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05564768E5693BBC32BFF624 /* SMCReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMCReader.swift; sourceTree = "<group>"; };
+		1E8ED0485189E942B98EE92F /* MemoryReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryReaderTests.swift; sourceTree = "<group>"; };
+		2E6CD859D00D66999C522F4E /* SystemMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMonitor.swift; sourceTree = "<group>"; };
+		316E2E31C4289D34F3B6C811 /* MetricTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricTypeTests.swift; sourceTree = "<group>"; };
+		439D3B758C6DDD941D9E8A92 /* SystemMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMonitorTests.swift; sourceTree = "<group>"; };
+		63476FD92F0008BF8655DF77 /* CPUUsageReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUUsageReader.swift; sourceTree = "<group>"; };
+		9015F0F1A4CE86BD3E85E2A9 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		91C7A4B878579E0527196943 /* MemoryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryReader.swift; sourceTree = "<group>"; };
+		930475F6FFA0F1B2A1D36EA4 /* CPUUsageReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUUsageReaderTests.swift; sourceTree = "<group>"; };
+		9B7D6595075409BC01CA72AC /* SMCReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMCReaderTests.swift; sourceTree = "<group>"; };
+		A5940557E52E359C675BCBEB /* GPUUsageReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPUUsageReader.swift; sourceTree = "<group>"; };
+		A95C885175CA5D0D67F29688 /* MoniMoniTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoniMoniTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE73BFB00DFA13CAC5EB96ED /* MetricType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricType.swift; sourceTree = "<group>"; };
+		C5EBD57973BD4A04D7C48C48 /* MoniMoni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoniMoni.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4DF9F24365F623E824C07B /* SystemMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMetrics.swift; sourceTree = "<group>"; };
+		D97234947EEE6ACB948C5062 /* MoniMoniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoniMoniApp.swift; sourceTree = "<group>"; };
+		ED9A85C3EC5E175CC40DAFA2 /* SystemMetricsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMetricsTests.swift; sourceTree = "<group>"; };
+		FABD122C52DB7933DCED6818 /* GPUUsageReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPUUsageReaderTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		09F39FA5D5A22B21C13935EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE73BFB00DFA13CAC5EB96ED /* MetricType.swift */,
+				CE4DF9F24365F623E824C07B /* SystemMetrics.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0B01EE6C0D7D07878D0F94E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9015F0F1A4CE86BD3E85E2A9 /* MenuBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3F3E076C39BB676342D2C9CD = {
+			isa = PBXGroup;
+			children = (
+				4B8C2481CF442FB3E2EA462A /* MoniMoni */,
+				BE5EBF5F25FE35FE96F23709 /* MoniMoniTests */,
+				784038A2A51C9AD3AAC31E54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B8C2481CF442FB3E2EA462A /* MoniMoni */ = {
+			isa = PBXGroup;
+			children = (
+				09F39FA5D5A22B21C13935EB /* Models */,
+				C7A97F390F62CB9A3E179721 /* Services */,
+				0B01EE6C0D7D07878D0F94E3 /* Views */,
+				D97234947EEE6ACB948C5062 /* MoniMoniApp.swift */,
+			);
+			path = MoniMoni;
+			sourceTree = "<group>";
+		};
+		784038A2A51C9AD3AAC31E54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5EBD57973BD4A04D7C48C48 /* MoniMoni.app */,
+				A95C885175CA5D0D67F29688 /* MoniMoniTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE5EBF5F25FE35FE96F23709 /* MoniMoniTests */ = {
+			isa = PBXGroup;
+			children = (
+				930475F6FFA0F1B2A1D36EA4 /* CPUUsageReaderTests.swift */,
+				FABD122C52DB7933DCED6818 /* GPUUsageReaderTests.swift */,
+				1E8ED0485189E942B98EE92F /* MemoryReaderTests.swift */,
+				316E2E31C4289D34F3B6C811 /* MetricTypeTests.swift */,
+				9B7D6595075409BC01CA72AC /* SMCReaderTests.swift */,
+				ED9A85C3EC5E175CC40DAFA2 /* SystemMetricsTests.swift */,
+				439D3B758C6DDD941D9E8A92 /* SystemMonitorTests.swift */,
+			);
+			path = MoniMoniTests;
+			sourceTree = "<group>";
+		};
+		C7A97F390F62CB9A3E179721 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				63476FD92F0008BF8655DF77 /* CPUUsageReader.swift */,
+				A5940557E52E359C675BCBEB /* GPUUsageReader.swift */,
+				91C7A4B878579E0527196943 /* MemoryReader.swift */,
+				05564768E5693BBC32BFF624 /* SMCReader.swift */,
+				2E6CD859D00D66999C522F4E /* SystemMonitor.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DADDF669DA7D839BAE4C36BB /* MoniMoniTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72295145C9CE938AB02C45E3 /* Build configuration list for PBXNativeTarget "MoniMoniTests" */;
+			buildPhases = (
+				B993BA460ED8E4BCC396148F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8C8A6B4CBE9D6AAAB350FCC /* PBXTargetDependency */,
+			);
+			name = MoniMoniTests;
+			packageProductDependencies = (
+			);
+			productName = MoniMoniTests;
+			productReference = A95C885175CA5D0D67F29688 /* MoniMoniTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE3E29D67D7799070F8C0E7A /* MoniMoni */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 601B95C05C9D7375B4513B42 /* Build configuration list for PBXNativeTarget "MoniMoni" */;
+			buildPhases = (
+				4216685E3A1E28537495B4F6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoniMoni;
+			packageProductDependencies = (
+			);
+			productName = MoniMoni;
+			productReference = C5EBD57973BD4A04D7C48C48 /* MoniMoni.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00BCAD671B382DC58A0747CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					DADDF669DA7D839BAE4C36BB = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					FE3E29D67D7799070F8C0E7A = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5ECE84A6E5FC7AA7AB1D4E7C /* Build configuration list for PBXProject "MoniMoni" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 3F3E076C39BB676342D2C9CD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 784038A2A51C9AD3AAC31E54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE3E29D67D7799070F8C0E7A /* MoniMoni */,
+				DADDF669DA7D839BAE4C36BB /* MoniMoniTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4216685E3A1E28537495B4F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43156C5F12A1EF7BE8BA7BE2 /* CPUUsageReader.swift in Sources */,
+				7DAF22CDB8A714A73E282984 /* GPUUsageReader.swift in Sources */,
+				56B89DB0BEE13AAB85C74583 /* MemoryReader.swift in Sources */,
+				882983F2CB3BF00A8DF581B4 /* MenuBarView.swift in Sources */,
+				8A6EA9A5C00253F2ACE4E6BD /* MetricType.swift in Sources */,
+				116AD6F5BD97037477740E6C /* MoniMoniApp.swift in Sources */,
+				3F16BD34C0C02F2ECF611858 /* SMCReader.swift in Sources */,
+				D53DF0F5DB21387A08C8FB63 /* SystemMetrics.swift in Sources */,
+				EA75C62D20D99F2E7FA41659 /* SystemMonitor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B993BA460ED8E4BCC396148F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4593E85B54F4B7C7869EC5E /* CPUUsageReaderTests.swift in Sources */,
+				681ABE13C8A35E5FB4ABEBE8 /* GPUUsageReaderTests.swift in Sources */,
+				C4B650E3E8038985D92490D5 /* MemoryReaderTests.swift in Sources */,
+				9D0C8930FED12F2D83925395 /* MetricTypeTests.swift in Sources */,
+				19D1FA1A32ACAB98A7302727 /* SMCReaderTests.swift in Sources */,
+				2995FBDD7C6930BE468996A4 /* SystemMetricsTests.swift in Sources */,
+				A246205782B9CE913F27A601 /* SystemMonitorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8C8A6B4CBE9D6AAAB350FCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE3E29D67D7799070F8C0E7A /* MoniMoni */;
+			targetProxy = BDBCC31212EE87FEC5C43645 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05016AB8DDC5D194BCEC7746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = MoniMoniIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MoniMoni/MoniMoni.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MoniMoni/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isaji134.MoniMoni;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MoniMoni/MoniMoni-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		0D3417DEBDC807249A96270C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isaji134.MoniMoniTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoniMoni.app/Contents/MacOS/MoniMoni";
+			};
+			name = Release;
+		};
+		1666791C1F02F5EF5B3B4FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isaji134.MoniMoniTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoniMoni.app/Contents/MacOS/MoniMoni";
+			};
+			name = Debug;
+		};
+		260EECF41A41D488963C115C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = MoniMoniIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MoniMoni/MoniMoni.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MoniMoni/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isaji134.MoniMoni;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MoniMoni/MoniMoni-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		754C56388872102EEE01B98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EF09314C950DE5AC538EB6BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5ECE84A6E5FC7AA7AB1D4E7C /* Build configuration list for PBXProject "MoniMoni" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754C56388872102EEE01B98A /* Debug */,
+				EF09314C950DE5AC538EB6BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		601B95C05C9D7375B4513B42 /* Build configuration list for PBXNativeTarget "MoniMoni" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05016AB8DDC5D194BCEC7746 /* Debug */,
+				260EECF41A41D488963C115C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		72295145C9CE938AB02C45E3 /* Build configuration list for PBXNativeTarget "MoniMoniTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1666791C1F02F5EF5B3B4FB3 /* Debug */,
+				0D3417DEBDC807249A96270C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00BCAD671B382DC58A0747CF /* Project object */;
+}
