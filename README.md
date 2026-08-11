@@ -23,6 +23,12 @@ It does not appear in the Dock — it lives only in the menu bar (`LSUIElement`)
 - Apple Silicon and Intel (sensor keys vary by machine)
 - Xcode 16 recommended
 
+## Install
+
+Download the latest ZIP from
+[GitHub Releases](https://github.com/shogoisaji/MoniMoni/releases), extract it,
+and move `MoniMoni.app` to your Applications folder.
+
 ## Setup
 
 The Xcode project is generated with [XcodeGen](https://github.com/yonaskolb/XcodeGen) from `project.yml`.
@@ -47,7 +53,9 @@ xcodegen generate
 xcodebuild -scheme MoniMoni -configuration Debug build
 ```
 
-> **Note:** `DEVELOPMENT_TEAM` is left empty. Set your Team ID locally if you need distribution or notarization.
+Signing and version defaults live in `Config/Shared.xcconfig`. Override them
+locally by copying `Config/Local.xcconfig.example` to `Config/Local.xcconfig`
+(gitignored).
 
 ### Tests
 
@@ -64,6 +72,44 @@ In Xcode, use the **MoniMoni** scheme and **Test** (⌘U).
 ### CI
 
 GitHub Actions (`.github/workflows/ci.yml`) runs `xcodegen generate` and `xcodebuild test` on macOS for `push` and `pull_request`.
+
+### Release (maintainers)
+
+Local release packaging mirrors CapMark: archive → Developer ID export →
+notarize → ZIP (optional DMG) → optional GitHub Release upload.
+
+**Prerequisites**
+
+- Apple Developer Program membership
+- `Developer ID Application` certificate in the login keychain
+- notarytool keychain profile (default name: `MoniMoniNotary`)
+
+```bash
+# One-time: store App Store Connect API credentials for notarization
+xcrun notarytool store-credentials MoniMoniNotary \
+  --apple-id "you@example.com" \
+  --team-id "YOUR_TEAM_ID" \
+  --password "app-specific-password"
+```
+
+**Commands**
+
+```bash
+# Build, sign, notarize, and write dist/MoniMoni-<version>.zip (+ .sha256)
+scripts/release-local.sh 1.0.0
+
+# Also produce a notarized DMG (requires: brew install create-dmg)
+scripts/release-local.sh 1.0.0 --dmg
+
+# Tag, push, and upload artifacts to GitHub Releases (clean git worktree + gh auth)
+scripts/release-local.sh 1.0.0 --publish
+# or both:
+scripts/release-local.sh 1.0.0 --dmg --publish
+```
+
+Artifacts land in `dist/` (gitignored). Before publishing a new version, bump
+`MARKETING_VERSION` in `Config/Shared.xcconfig` if you keep it as the project
+default (the script also passes the CLI version into the archive).
 
 ## Security and privacy
 

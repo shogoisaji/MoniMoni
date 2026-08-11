@@ -46,8 +46,10 @@ Carthage/Build/
 *.cer
 .env
 .env.*
+Config/Local.xcconfig
 
 # Archives / packages
 *.xcarchive
 *.dmg
 *.pkg
+dist/

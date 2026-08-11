@@ -41,6 +41,7 @@
 		2E6CD859D00D66999C522F4E /* SystemMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMonitor.swift; sourceTree = "<group>"; };
 		316E2E31C4289D34F3B6C811 /* MetricTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricTypeTests.swift; sourceTree = "<group>"; };
 		439D3B758C6DDD941D9E8A92 /* SystemMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMonitorTests.swift; sourceTree = "<group>"; };
+		609CB4AB21C1A651A0C7ADDB /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		63476FD92F0008BF8655DF77 /* CPUUsageReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUUsageReader.swift; sourceTree = "<group>"; };
 		9015F0F1A4CE86BD3E85E2A9 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
 		91C7A4B878579E0527196943 /* MemoryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryReader.swift; sourceTree = "<group>"; };
@@ -74,9 +75,18 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		202B4A42277325854096316A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				609CB4AB21C1A651A0C7ADDB /* Shared.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		3F3E076C39BB676342D2C9CD = {
 			isa = PBXGroup;
 			children = (
+				202B4A42277325854096316A /* Config */,
 				4B8C2481CF442FB3E2EA462A /* MoniMoni */,
 				BE5EBF5F25FE35FE96F23709 /* MoniMoniTests */,
 				784038A2A51C9AD3AAC31E54 /* Products */,
@@ -177,11 +187,10 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					DADDF669DA7D839BAE4C36BB = {
-						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
 					};
 					FE3E29D67D7799070F8C0E7A = {
-						DevelopmentTeam = "";
+						DevelopmentTeam = B38AC9YT25;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -250,14 +259,13 @@
 /* Begin XCBuildConfiguration section */
 		05016AB8DDC5D194BCEC7746 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 609CB4AB21C1A651A0C7ADDB /* Shared.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = MoniMoniIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MoniMoni/MoniMoni.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = MoniMoni/Info.plist;
@@ -267,8 +275,6 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.isaji134.MoniMoni;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -282,7 +288,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,7 +308,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -320,14 +324,13 @@
 		};
 		260EECF41A41D488963C115C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 609CB4AB21C1A651A0C7ADDB /* Shared.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = MoniMoniIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MoniMoni/MoniMoni.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = MoniMoni/Info.plist;
@@ -337,8 +340,6 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.isaji134.MoniMoni;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
