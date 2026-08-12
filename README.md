@@ -25,7 +25,15 @@ It does not appear in the Dock — it lives only in the menu bar (`LSUIElement`)
 
 ## Install
 
-Download the latest ZIP from
+```bash
+brew tap shogoisaji/monimoni
+brew trust --cask shogoisaji/monimoni/monimoni
+brew install --cask monimoni
+```
+
+`brew trust` trusts only the MoniMoni cask (not every package in the tap).
+
+Alternatively, download the latest ZIP from
 [GitHub Releases](https://github.com/shogoisaji/MoniMoni/releases), extract it,
 and move `MoniMoni.app` to your Applications folder.
 
